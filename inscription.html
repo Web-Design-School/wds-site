@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscription — Web Design School</title>
+<meta name="description" content="Rejoins la prochaine cohorte de Web Design School. Formation UX/UI Design, 100% pratique, augmentée par l'IA.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FscXVlXzIiIGRhdGEtbmFtZT0iQ2FscXVlIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE5NC44MiAxOTQuODIiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICMwMDM3ZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQoKICAgICAgLmNscy0zIHsKICAgICAgICBmaWxsOiAjZmYwMDY4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTIiIHdpZHRoPSIxOTQuODIiIGhlaWdodD0iMTk0LjgyIiByeD0iMjAuMzMiIHJ5PSIyMC4zMyIvPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNzguMTMsMTU0Ljc5bC0uMzEtMTIuNzdjLS4xMy01LjQsMy4xLTkuMTUsOC05LjI3LDEuMTItLjAzLDIuMTMuMTQsMy4wNi41LDMuMTYsMS4xMiw1LjE2LDQuMTYsNS4yNiw4LjIxbC4wNywyLjg5Yy4xLDQuMDUsMi4xNyw1LjE2LDQuMyw1LjExaC4zOWMyLjEyLS4wNiw0LjE0LTEuMjcsNC4wNC01LjMybC0uMDctMi44OWMtLjEtNC4wNSwxLjc1LTcuMTksNC44NS04LjQ2LjkyLS40MSwxLjkyLS42MywzLjAzLS42NSw0LjktLjEyLDguMzEsMy40Niw4LjQ0LDguODdsLjMxLDEyLjc3LTUuMjEuMTMtLjI5LTExLjY5Yy0uMDYtMi4zOS0xLjQ0LTMuNTItMy4yMS0zLjQ3LTEuNS4wNC0yLjc5LDEuMDctMi44NiwzLjItLjA0LjEyLS4wMy4yNy0uMDMuNDNsLjA3LDIuNzRjLjAyLjg5LS4wMywxLjc0LS4xMywyLjUxLS4wMy4zOS0uMS43NC0uMiwxLjA5LS4wNy4zNS0uMTguNy0uMjgsMS4wNS0uMTguNDctLjM2Ljk0LS41NSwxLjMzLTEuNDgsMi44Mi00LjEsNC4zOS03LjEsNC43My0uMzEuMDUtLjY1LjA1LS45Ni4wNi0uMjcsMC0uNS4wMS0uNzMtLjAyLTMuMDItLjItNS43Mi0xLjY0LTcuMzMtNC4zOC0uMi0uMzgtLjQxLS44NC0uNjEtMS4zLS4xMi0uMzEtLjI1LS42NS0uMzMtMS4wMy0uMTItLjM0LS4yMS0uNjktLjI2LTEuMDctLjEzLS43Ny0uMjMtMS42Mi0uMjUtMi41bC0uMDctMi43NGMwLS4xNSwwLS4zMS0uMDUtLjQyLS4xNy0yLjEyLTEuNTEtMy4wOS0zLjAxLTMuMDUtMS43OC4wNC0zLjEsMS4yMy0zLjA0LDMuNjNsLjI5LDExLjY5LTUuMjEuMTNaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zOC4wOCwxMDkuNGwxMC45LTYuNjZjNC42MS0yLjgyLDkuNDctMS44OSwxMi4wMywyLjI5LjU4Ljk2Ljk0LDEuOTEsMS4xLDIuOS42MSwzLjI5LTEuMDIsNi41NS00LjQ4LDguNjZsLTIuNDcsMS41MWMtMy40NiwyLjExLTMuMzgsNC40Ni0yLjI3LDYuMjdsLjIuMzNjMS4xMSwxLjgxLDMuMTYsMi45NSw2LjYyLjg0bDIuNDctMS41MWMzLjQ2LTIuMTEsNy4xLTIuMDcsOS43NS0uMDMuODEuNTksMS41LDEuMzUsMi4wOCwyLjMsMi41Niw0LjE4LDEuMTYsOC45My0zLjQ2LDExLjc1bC0xMC45LDYuNjYtMi43Mi00LjQ1LDkuOTgtNi4xYzIuMDQtMS4yNSwyLjMzLTMsMS40LTQuNTItLjc4LTEuMjgtMi4zMy0xLjg4LTQuMi0uODctLjEyLjAzLS4yNS4xMS0uMzguMTlsLTIuMzQsMS40M2MtLjc2LjQ2LTEuNTIuODQtMi4yNCwxLjE0LS4zNS4xNy0uNjkuMjgtMS4wNC4zNy0uMzQuMTItLjY5LjItMS4wNS4yOC0uNS4wOC0uOTkuMTUtMS40Mi4xOS0zLjE4LjEzLTUuODUtMS4zNi03LjY1LTMuNzktLjE5LS4yNC0uMzctLjU0LS41NC0uOC0uMTQtLjIzLS4yNi0uNDMtLjM1LS42NS0xLjM0LTIuNzEtMS40NC01Ljc3LjEzLTguNTMuMjMtLjM3LjUyLS43Ny44Mi0xLjE4LjItLjI2LjQ0LS41NC43My0uODEuMjQtLjI4LjQ5LS41My44LS43Ni42LS41LDEuMjgtMS4wMSwyLjA0LTEuNDdsMi4zNC0xLjQzYy4xMy0uMDguMjYtLjE2LjM0LS4yNSwxLjc1LTEuMjEsMS45Mi0yLjg1LDEuMTQtNC4xMy0uOTMtMS41Mi0yLjYyLTIuMDctNC42Ni0uODJsLTkuOTgsNi4xLTIuNzItNC40NVoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTU3LjM2LDUyLjAybDExLjIyLDYuMTFjNC43NSwyLjU5LDYuMzgsNy4yNiw0LjAzLDExLjU2LS41NC45OC0xLjE5LDEuNzctMS45NywyLjQtMi41NSwyLjE3LTYuMTgsMi4zOS05Ljc0LjQ1bC0yLjU0LTEuMzljLTMuNTYtMS45NC01LjU1LS43LTYuNTcsMS4xN2wtLjE4LjM0Yy0xLjAyLDEuODYtLjk4LDQuMjEsMi41OCw2LjE1bDIuNTQsMS4zOWMzLjU2LDEuOTQsNS4zNSw1LjExLDQuOSw4LjQzLS4xLDEtLjQyLDEuOTctLjk1LDIuOTUtMi4zNSw0LjMtNy4xNSw1LjQ3LTExLjksMi44OGwtMTEuMjItNi4xMSwyLjQ5LTQuNTgsMTAuMjcsNS42YzIuMSwxLjE1LDMuNzYuNTEsNC42MS0xLjA1LjcyLTEuMzIuNDctMi45NS0xLjM0LTQuMDctLjA4LS4wOS0uMjItLjE2LS4zNS0uMjRsLTIuNDEtMS4zMWMtLjc4LS40Mi0xLjQ5LS45LTIuMTEtMS4zNy0uMzItLjIyLS41OS0uNDUtLjg0LS43Mi0uMjctLjIzLS41Mi0uNS0uNzctLjc3LS4zMS0uMzktLjYzLS43OC0uODgtMS4xNC0xLjctMi42OS0xLjc1LTUuNzUtLjU1LTguNTIuMTEtLjI5LjI4LS41OS40My0uODcuMTMtLjI0LjI0LS40NC4zOC0uNjMsMS42OC0yLjUxLDQuMjctNC4xMyw3LjQ1LTQuMTYuNDMuMDIuOTMuMDcsMS40My4xMi4zMy4wNS42OS4xMSwxLjA2LjIzLjM2LjA2LjcuMTYsMS4wNi4zMS43My4yNywxLjUyLjYxLDIuMywxLjAzbDIuNDEsMS4zMWMuMTQuMDcuMjcuMTUuMzkuMTcsMS45Mi45MSwzLjQzLjI0LDQuMTUtMS4wOC44NS0xLjU2LjQ4LTMuMy0xLjYyLTQuNDVsLTEwLjI3LTUuNiwyLjQ5LTQuNThaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMTYuNyw0MC4wM2wuMzEsMTIuNzdjLjEzLDUuNC0zLjEsOS4xNS04LDkuMjctMS4xMi4wMy0yLjEzLS4xNC0zLjA2LS41LTMuMTYtMS4xMi01LjE2LTQuMTYtNS4yNi04LjIxbC0uMDctMi44OWMtLjEtNC4wNS0yLjE3LTUuMTYtNC4zLTUuMTFoLS4zOWMtMi4xMi4wNi00LjE0LDEuMjctNC4wNCw1LjMybC4wNywyLjg5Yy4xLDQuMDUtMS43NSw3LjE5LTQuODUsOC40Ni0uOTIuNDEtMS45Mi42My0zLjAzLjY1LTQuOS4xMi04LjMxLTMuNDYtOC40NC04Ljg3bC0uMzEtMTIuNzcsNS4yMS0uMTMuMjksMTEuNjljLjA2LDIuMzksMS40NCwzLjUyLDMuMjEsMy40NywxLjUtLjA0LDIuNzktMS4wNywyLjg2LTMuMi4wNC0uMTIuMDMtLjI3LjAzLS40M2wtLjA3LTIuNzRjLS4wMi0uODkuMDMtMS43NC4xMy0yLjUxLjAzLS4zOS4xLS43NC4yLTEuMDkuMDctLjM1LjE4LS43LjI4LTEuMDUuMTgtLjQ3LjM2LS45NC41NS0xLjMzLDEuNDgtMi44Miw0LjEtNC4zOSw3LjEtNC43My4zMS0uMDUuNjUtLjA1Ljk2LS4wNi4yNywwLC41LS4wMS43My4wMiwzLjAyLjIsNS43MiwxLjY0LDcuMzMsNC4zOC4yLjM4LjQxLjg0LjYxLDEuMy4xMi4zMS4yNS42NS4zMywxLjAzLjEyLjM0LjIxLjY5LjI2LDEuMDcuMTMuNzcuMjMsMS42Mi4yNSwyLjVsLjA3LDIuNzRjMCwuMTUsMCwuMzEuMDUuNDIuMTcsMi4xMiwxLjUxLDMuMDksMy4wMSwzLjA1LDEuNzgtLjA0LDMuMS0xLjIzLDMuMDQtMy42M2wtLjI5LTExLjY5LDUuMjEtLjEzWiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTU2Ljc0LDg1LjQybC0xMC45LDYuNjZjLTQuNjEsMi44Mi05LjQ3LDEuODktMTIuMDMtMi4yOS0uNTgtLjk2LS45NC0xLjkxLTEuMS0yLjktLjYxLTMuMjksMS4wMi02LjU1LDQuNDgtOC42NmwyLjQ3LTEuNTFjMy40Ni0yLjExLDMuMzgtNC40NiwyLjI3LTYuMjdsLS4yLS4zM2MtMS4xMS0xLjgxLTMuMTYtMi45NS02LjYyLS44NGwtMi40NywxLjUxYy0zLjQ2LDIuMTEtNy4xLDIuMDctOS43NS4wMy0uODEtLjU5LTEuNS0xLjM1LTIuMDgtMi4zLTIuNTYtNC4xOC0xLjE2LTguOTMsMy40Ni0xMS43NWwxMC45LTYuNjYsMi43Miw0LjQ1LTkuOTgsNi4xYy0yLjA0LDEuMjUtMi4zMywzLTEuNCw0LjUyLjc4LDEuMjgsMi4zMywxLjg4LDQuMi44Ny4xMi0uMDMuMjUtLjExLjM4LS4xOWwyLjM0LTEuNDNjLjc2LS40NiwxLjUyLS44NCwyLjI0LTEuMTQuMzUtLjE3LjY5LS4yOCwxLjA0LS4zNy4zNC0uMTIuNjktLjIsMS4wNS0uMjguNS0uMDguOTktLjE1LDEuNDItLjE5LDMuMTgtLjEzLDUuODUsMS4zNiw3LjY1LDMuNzkuMTkuMjQuMzcuNTQuNTQuOC4xNC4yMy4yNi40My4zNS42NSwxLjM0LDIuNzEsMS40NCw1Ljc3LS4xMyw4LjUzLS4yMy4zNy0uNTIuNzctLjgyLDEuMTgtLjIuMjYtLjQ0LjU0LS43My44MS0uMjQuMjgtLjQ5LjUzLS44Ljc2LS42LjUtMS4yOCwxLjAxLTIuMDQsMS40N2wtMi4zNCwxLjQzYy0uMTMuMDgtLjI2LjE2LS4zNC4yNS0xLjc1LDEuMjEtMS45MiwyLjg1LTEuMTQsNC4xMy45MywxLjUyLDIuNjIsMi4wNyw0LjY2LjgybDkuOTgtNi4xLDIuNzIsNC40NVoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEzNy40NiwxNDIuOGwtMTEuMjItNi4xMWMtNC43NS0yLjU5LTYuMzgtNy4yNi00LjAzLTExLjU2LjU0LS45OCwxLjE5LTEuNzcsMS45Ny0yLjQsMi41NS0yLjE3LDYuMTgtMi4zOSw5Ljc0LS40NWwyLjU0LDEuMzljMy41NiwxLjk0LDUuNTUuNyw2LjU3LTEuMTdsLjE4LS4zNGMxLjAyLTEuODYuOTgtNC4yMS0yLjU4LTYuMTVsLTIuNTQtMS4zOWMtMy41Ni0xLjk0LTUuMzUtNS4xMS00LjktOC40My4xLTEsLjQyLTEuOTcuOTUtMi45NSwyLjM1LTQuMyw3LjE1LTUuNDcsMTEuOS0yLjg4bDExLjIyLDYuMTEtMi40OSw0LjU4LTEwLjI3LTUuNmMtMi4xLTEuMTUtMy43Ni0uNTEtNC42MSwxLjA1LS43MiwxLjMyLS40NywyLjk1LDEuMzQsNC4wNy4wOC4wOS4yMi4xNi4zNS4yNGwyLjQxLDEuMzFjLjc4LjQyLDEuNDkuOSwyLjExLDEuMzcuMzIuMjIuNTkuNDUuODQuNzIuMjcuMjMuNTIuNS43Ny43Ny4zMS4zOS42My43OC44OCwxLjE0LDEuNywyLjY5LDEuNzUsNS43NS41NSw4LjUyLS4xMS4yOS0uMjguNTktLjQzLjg3LS4xMy4yNC0uMjQuNDQtLjM4LjYzLTEuNjgsMi41MS00LjI3LDQuMTMtNy40NSw0LjE2LS40My0uMDItLjkzLS4wNy0xLjQzLS4xMi0uMzMtLjA1LS42OS0uMTEtMS4wNi0uMjMtLjM2LS4wNi0uNy0uMTYtMS4wNi0uMzEtLjczLS4yNy0xLjUyLS42MS0yLjMtMS4wM2wtMi40MS0xLjMxYy0uMTQtLjA3LS4yNy0uMTUtLjM5LS4xNy0xLjkyLS45MS0zLjQzLS4yNC00LjE1LDEuMDgtLjg1LDEuNTYtLjQ4LDMuMywxLjYyLDQuNDVsMTAuMjcsNS42LTIuNDksNC41OFoiLz4KICA8L2c+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjExMy4wMyA4MS43OSAxMTMuMDMgMTEzLjAzIDExMy4wMSAxMTMuMDMgOTcuNDEgOTcuNDQgODEuODEgMTEzLjAzIDgxLjggMTEzLjAzIDgxLjggODEuNzkgMTEzLjAzIDgxLjc5Ii8+Cjwvc3ZnPg==">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Noka';src:url('fonts/Noka-Hairline.woff2') format('woff2');font-weight:100;font-style:normal;font-display:swap;unicode-range:U+0020,U+002C-002E,U+0030-0039,U+0041-005A,U+0061-007A}
+  @font-face{font-family:'Noka';src:url('fonts/Noka-Light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap;unicode-range:U+0020,U+002C-002E,U+0030-0039,U+0041-005A,U+0061-007A}
+  @font-face{font-family:'Noka';src:url('fonts/Noka-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap;unicode-range:U+0020,U+002C-002E,U+0030-0039,U+0041-005A,U+0061-007A}
+  @font-face{font-family:'Noka';src:url('fonts/Noka-Semibold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap;unicode-range:U+0020,U+002C-002E,U+0030-0039,U+0041-005A,U+0061-007A}
+  @font-face{font-family:'Noka';src:url('fonts/Noka-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0020,U+002C-002E,U+0030-0039,U+0041-005A,U+0061-007A}
+  @font-face{font-family:'Noka';src:url('fonts/Noka-Black.woff2') format('woff2');font-weight:900;font-style:normal;font-display:swap;unicode-range:U+0020,U+002C-002E,U+0030-0039,U+0041-005A,U+0061-007A}
+  :root{
+    --blue:#0037FF;--blue-deep:#0026b3;--pink:#FF0068;--cyan:#4BD1DB;--yellow:#FFDC00;--ink:#191919;
+    --paper:#f4f7ff;--card:#ffffff;--line:#e4e9f7;--muted:#5b6472;--ok:#16a34a;--err:#e11d48;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh}
+  h1,h2,h3,.dp{font-family:'Noka','Poppins',sans-serif;letter-spacing:-.5px}
+  a{color:inherit;text-decoration:none}
+
+  /* décor vaguelettes */
+  .bg-wave{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+  .bg-wave svg{position:absolute}
+  .w1{top:-60px;right:-80px;width:420px;opacity:.5}
+  .w2{bottom:-70px;left:-90px;width:380px;opacity:.35}
+
+  .topbar{position:sticky;top:0;z-index:20;background:rgba(244,247,255,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .topbar-in{max-width:720px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:flex-start}
+  .logo svg{height:34px;width:auto;display:block}
+  .back{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins';font-weight:600;font-size:.92rem;color:var(--ink);background:#fff;border:1px solid var(--line);padding:9px 16px;border-radius:999px;cursor:pointer;transition:.18s}
+  .back:hover{border-color:var(--blue);color:var(--blue);transform:translateX(-2px)}
+
+  .wrap{position:relative;z-index:2;max-width:720px;margin:0 auto;padding:30px 20px 150px}
+  .intro{text-align:center;margin-bottom:26px}
+  .pill{display:inline-flex;align-items:center;gap:8px;background:#e7ecff;color:var(--blue);font-family:'Poppins';font-weight:600;font-size:.82rem;padding:7px 15px;border-radius:999px;margin-bottom:16px}
+  .pill .dot{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+  .intro h1{font-size:clamp(1.9rem,5vw,2.7rem);line-height:1.06;margin-bottom:10px}
+  .intro p{color:var(--muted);max-width:460px;margin:0 auto;font-size:1.02rem}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 24px;box-shadow:0 20px 50px rgba(0,20,90,.06);margin-bottom:18px}
+  .card > .sec-title{font-family:'Poppins';font-weight:700;font-size:1.05rem;margin-bottom:4px}
+  .card > .sec-hint{color:var(--muted);font-size:.9rem;margin-bottom:16px}
+  .field-label{font-family:'Poppins';font-weight:600;font-size:.9rem;margin:14px 0 8px}
+  .field-label:first-of-type{margin-top:0}
+  .req{color:var(--pink)}
+
+  /* champs texte */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:520px){.grid2{grid-template-columns:1fr}}
+  .inp{width:100%}
+  .inp label{display:block;font-family:'Poppins';font-weight:600;font-size:.85rem;margin-bottom:6px}
+  .inp input,.inp textarea{width:100%;font-family:inherit;font-size:1rem;color:var(--ink);background:#fbfcff;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;transition:border-color .15s,box-shadow .15s}
+  .inp input:focus,.inp textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(0,55,255,.1);background:#fff}
+  .inp textarea{resize:vertical;min-height:74px}
+  .inp .err-msg{color:var(--err);font-size:.82rem;margin-top:5px;display:none}
+  .inp.invalid input,.inp.invalid textarea{border-color:var(--err);background:#fff6f8}
+  .inp.invalid .err-msg{display:block}
+
+  /* tags */
+  .taggroup{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:4px}
+  .tag{font-family:'Poppins';font-weight:500;font-size:.92rem;color:#33404f;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;cursor:pointer;transition:transform .12s,background .15s,border-color .15s,color .15s,box-shadow .15s}
+  .tag:hover{border-color:#c2cdf0}
+  .tag.active{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 8px 18px rgba(0,55,255,.28)}
+  .tag:active{transform:scale(1.06)}
+  .taggroup.invalid{outline:2px solid var(--err);outline-offset:6px;border-radius:14px}
+  .group-err{color:var(--err);font-size:.82rem;margin-top:8px;display:none}
+  .taggroup.invalid + .group-err{display:block}
+  .shake{animation:shake .35s}
+  @keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+
+  /* submit */
+  .submit-wrap{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -6px 26px rgba(0,20,90,.08);padding:10px 20px;text-align:center}
+  .submit-inner{max-width:720px;margin:0 auto}
+  .submit{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Poppins';font-weight:700;font-size:.96rem;color:#fff;background:var(--blue);border:none;border-radius:999px;padding:11px 34px;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;min-width:220px}
+  .submit:hover{background:var(--blue-deep);transform:translateY(-3px);box-shadow:0 16px 34px rgba(0,55,255,.34)}
+  .submit:disabled{opacity:.75;cursor:default;transform:none}
+  .spinner{width:18px;height:18px;border:2.5px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;display:none}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .submit.loading .spinner{display:inline-block}
+  .submit.loading .txt{opacity:.85}
+  .safe-note{color:var(--muted);font-size:.8rem;margin-top:8px}
+  .topbar-in{justify-content:space-between}
+  .topbar-note{margin-left:auto;background:#eef0f3;color:var(--muted);font-size:.78rem;padding:8px 14px;border-radius:999px;max-width:340px;line-height:1.3}
+  @media(max-width:640px){.topbar-note{display:none}}
+  @media(max-width:520px){.submit-wrap .submit{width:100%;min-width:0}}
+
+  /* succès */
+  .success{position:fixed;inset:0;z-index:50;background:rgba(244,247,255,.96);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:24px;opacity:0;transition:opacity .3s}
+  .success.show{display:flex;opacity:1}
+  .success-card{background:#fff;border-radius:26px;max-width:460px;width:100%;text-align:center;padding:44px 30px;box-shadow:0 30px 70px rgba(0,20,90,.18);transform:translateY(14px);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+  .success.show .success-card{transform:none}
+  .check{width:84px;height:84px;margin:0 auto 20px}
+  .check circle{stroke:var(--ok);stroke-width:5;fill:none;stroke-dasharray:170;stroke-dashoffset:170;animation:draw .5s ease forwards}
+  .check path{stroke:var(--ok);stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:60;stroke-dashoffset:60;animation:draw .35s .45s ease forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .success-card h2{font-size:1.7rem;margin-bottom:10px}
+  .success-card p{color:var(--muted);margin-bottom:24px}
+  .success-card .btn2{display:inline-flex;align-items:center;gap:9px;font-family:'Poppins';font-weight:700;color:#fff;background:var(--ink);border-radius:999px;padding:14px 30px;cursor:pointer;border:none;font-size:1rem}
+  .success-card .btn2:hover{transform:translateY(-2px)}
+
+  :focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="bg-wave" aria-hidden="true">
+  <svg class="w1" viewBox="0 0 420 240" fill="none"><path d="M20 120 q34 -70 68 0 t68 0 t68 0 t68 0 t68 0" stroke="#d7e0ff" stroke-width="34" stroke-linecap="round"/></svg>
+  <svg class="w2" viewBox="0 0 380 220" fill="none"><path d="M20 110 q30 -62 60 0 t60 0 t60 0 t60 0" stroke="#ffd9e6" stroke-width="30" stroke-linecap="round"/></svg>
+</div>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <button class="back" id="backBtn" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 5 5 12 12 19"></polyline></svg> Retour au site</button>
+    <div class="topbar-note">Tes informations restent confidentielles et servent uniquement à te recontacter.</div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="intro">
+    <div class="pill"><span class="dot"></span> Cohorte 9 · démarrage le 28 septembre 2026</div>
+    <h1>Rejoins la prochaine cohorte</h1>
+    <p>Formation UX/UI Design, 100&nbsp;% pratique et augmentée par l'IA. Réponds en 2&nbsp;minutes, on te recontacte sur WhatsApp.</p>
+  </div>
+
+  <form id="form" novalidate>
+
+    <!-- CONTACT -->
+    <section class="card">
+      <div class="sec-title">Faisons connaissance</div>
+      <div class="sec-hint">Pour pouvoir te recontacter rapidement.</div>
+      <div class="grid2">
+        <div class="inp"><label>Prénom <span class="req">*</span></label><input name="prenom" type="text" autocomplete="given-name"><div class="err-msg">Indique ton prénom.</div></div>
+        <div class="inp"><label>Nom <span class="req">*</span></label><input name="nom" type="text" autocomplete="family-name"><div class="err-msg">Indique ton nom.</div></div>
+        <div class="inp"><label>Numéro WhatsApp <span class="req">*</span></label><input name="whatsapp" type="tel" inputmode="tel" placeholder="+229 ..." autocomplete="tel"><div class="err-msg">Indique un numéro WhatsApp valide.</div></div>
+        <div class="inp"><label>Email <span class="req">*</span></label><input name="email" type="email" inputmode="email" placeholder="toi@email.com" autocomplete="email"><div class="err-msg">Indique un email valide.</div></div>
+      </div>
+      <div class="field-label">Ville et pays <span class="req">*</span></div>
+      <div class="inp"><input name="ville" type="text" placeholder="Ex : Cotonou, Bénin"><div class="err-msg">Indique ta ville et ton pays.</div></div>
+    </section>
+
+    <!-- SITUATION -->
+    <section class="card">
+      <div class="sec-title">Ta situation actuelle <span class="req">*</span></div>
+      <div class="sec-hint">Choisis ce qui te correspond le mieux.</div>
+      <div class="taggroup" data-name="situation" data-single data-required>
+        <button type="button" class="tag">Étudiant·e</button>
+        <button type="button" class="tag">En emploi</button>
+        <button type="button" class="tag">En reconversion</button>
+        <button type="button" class="tag">Sans emploi</button>
+      </div>
+      <div class="group-err">Sélectionne une réponse.</div>
+    </section>
+
+    <!-- AISANCE INFORMATIQUE (filtre) -->
+    <section class="card">
+      <div class="sec-title">Ton aisance avec l'ordinateur</div>
+      <div class="sec-hint">La formation démarre au niveau design, pas au niveau informatique. On veut juste s'assurer que tu es à l'aise avec un ordinateur.</div>
+
+      <div class="field-label">J'utilise un ordinateur <span class="req">*</span></div>
+      <div class="taggroup" data-name="ordi_frequence" data-single data-required>
+        <button type="button" class="tag">Tous les jours</button>
+        <button type="button" class="tag">De temps en temps</button>
+        <button type="button" class="tag">Rarement</button>
+      </div>
+      <div class="group-err">Sélectionne une réponse.</div>
+
+      <div class="field-label">Télécharger un logiciel, gérer mes fichiers, naviguer sur le web <span class="req">*</span></div>
+      <div class="taggroup" data-name="ordi_aisance" data-single data-required>
+        <button type="button" class="tag">Sans problème</button>
+        <button type="button" class="tag">Un peu</button>
+        <button type="button" class="tag">Pas vraiment</button>
+      </div>
+      <div class="group-err">Sélectionne une réponse.</div>
+
+      <div class="field-label">As-tu déjà utilisé l'un de ces outils ? <span style="color:var(--muted);font-weight:500">(facultatif)</span></div>
+      <div class="taggroup" data-name="outils" data-multi>
+        <button type="button" class="tag">Canva</button>
+        <button type="button" class="tag">Figma</button>
+        <button type="button" class="tag">Photoshop</button>
+        <button type="button" class="tag">Aucun</button>
+      </div>
+    </section>
+
+    <!-- MOTIVATION -->
+    <section class="card">
+      <div class="sec-title">Qu'est-ce qui te motive ?</div>
+      <div class="sec-hint">En une phrase, dis-nous pourquoi tu veux te former au design. (facultatif mais apprécié)</div>
+      <div class="inp"><textarea name="motivation" placeholder="Ex : je veux changer de métier et créer des interfaces..."></textarea></div>
+    </section>
+
+    <!-- SOURCE -->
+    <section class="card">
+      <div class="sec-title">Comment nous as-tu connus ? <span class="req">*</span></div>
+      <div class="taggroup" data-name="source" data-single data-required>
+        <button type="button" class="tag">Facebook</button>
+        <button type="button" class="tag">Instagram</button>
+        <button type="button" class="tag">TikTok</button>
+        <button type="button" class="tag">LinkedIn</button>
+        <button type="button" class="tag">Bouche-à-oreille</button>
+        <button type="button" class="tag">Autre</button>
+      </div>
+      <div class="group-err">Sélectionne une réponse.</div>
+    </section>
+
+    <!-- ENGAGEMENT -->
+    <section class="card">
+      <div class="sec-title">Prêt·e à t'investir ? <span class="req">*</span></div>
+      <div class="sec-hint">La formation dure 3 mois, en soirée et le week-end. Elle demande de la régularité.</div>
+      <div class="taggroup" data-name="engagement" data-single data-required>
+        <button type="button" class="tag">Oui, je suis motivé·e</button>
+        <button type="button" class="tag">J'aimerais en savoir plus avant</button>
+      </div>
+      <div class="group-err">Sélectionne une réponse.</div>
+    </section>
+
+    <div class="submit-wrap">
+      <div class="submit-inner">
+      <button type="submit" class="submit" id="submitBtn">
+        <span class="spinner"></span><span class="txt">Envoyer mon inscription</span>
+      </button>
+      </div>
+    </div>
+
+  </form>
+</main>
+
+<!-- SUCCÈS -->
+<div class="success" id="success">
+  <div class="success-card">
+    <svg class="check" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/><path d="M28 52 L44 68 L74 34"/></svg>
+    <h2>Inscription reçue&nbsp;!</h2>
+    <p>Merci&nbsp;! On te recontacte très vite sur WhatsApp pour la suite. Révèle ton potentiel.</p>
+    <button class="btn2" id="successBack" type="button">Retour au site</button>
+  </div>
+</div>
+
+<script>
+  // ====== CONFIG ======
+  // Fonction Netlify qui envoie directement les données vers Notion (sans Make/Zapier).
+  // Laisse vide pour tester : le formulaire affichera le succès sans envoyer.
+  const WEBHOOK_URL = "/.netlify/functions/notion-submit";
+
+  // ====== NAV RETOUR ======
+  function goBack(){ location.href="index.html"; }
+  document.getElementById('backBtn').addEventListener('click', goBack);
+  document.getElementById('successBack').addEventListener('click', goBack);
+
+  // ====== TAGS ======
+  document.querySelectorAll('.taggroup').forEach(function(group){
+    var single = group.hasAttribute('data-single');
+    group.querySelectorAll('.tag').forEach(function(tag){
+      tag.addEventListener('click', function(){
+        if(single){
+          if(!tag.classList.contains('active')){
+            group.querySelectorAll('.tag').forEach(function(t){t.classList.remove('active')});
+          }
+          tag.classList.toggle('active');
+        }else{
+          tag.classList.toggle('active');
+        }
+        group.classList.remove('invalid');
+      });
+    });
+  });
+
+  // ====== VALIDATION ======
+  function isEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function isPhone(v){ return (v.replace(/[^0-9]/g,'').length) >= 8; }
+
+  var form = document.getElementById('form');
+  var submitBtn = document.getElementById('submitBtn');
+
+  function clearError(inp){ inp.classList.remove('invalid'); }
+  document.querySelectorAll('.inp input,.inp textarea').forEach(function(el){
+    el.addEventListener('input', function(){ clearError(el.closest('.inp')); });
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var ok = true, firstBad = null;
+
+    function checkText(name, validator){
+      var el = form.querySelector('[name="'+name+'"]');
+      var box = el.closest('.inp');
+      var val = el.value.trim();
+      var good = validator ? (val && validator(val)) : !!val;
+      if(!good){ box.classList.add('invalid'); box.classList.add('shake'); setTimeout(function(){box.classList.remove('shake')},400); ok=false; if(!firstBad) firstBad=box; }
+      else box.classList.remove('invalid');
+      return val;
+    }
+    checkText('prenom'); checkText('nom');
+    checkText('whatsapp', isPhone); checkText('email', isEmail); checkText('ville');
+
+    // groupes requis
+    form.querySelectorAll('.taggroup[data-required]').forEach(function(group){
+      var sel = group.querySelector('.tag.active');
+      if(!sel){ group.classList.add('invalid'); group.classList.add('shake'); setTimeout(function(){group.classList.remove('shake')},400); ok=false; if(!firstBad) firstBad=group; }
+    });
+
+    if(!ok){ if(firstBad) firstBad.scrollIntoView({behavior:'smooth',block:'center'}); return; }
+
+    // ====== CONSTRUIRE LE JSON (prêt pour Notion) ======
+    function val(name){ var el=form.querySelector('[name="'+name+'"]'); return el?el.value.trim():""; }
+    function tag(name){ var g=form.querySelector('.taggroup[data-name="'+name+'"] .tag.active'); return g?g.textContent.trim():""; }
+    function tags(name){ return Array.from(form.querySelectorAll('.taggroup[data-name="'+name+'"] .tag.active')).map(function(t){return t.textContent.trim()}); }
+
+    // ====== SCORE PROSPECT (calculé automatiquement, /100) ======
+    function computeScore(a){
+      var score = 0;
+      // Engagement — signal le plus fort
+      if(a.engagement === "Oui, je suis motivé·e") score += 40;
+      else if(a.engagement === "J'aimerais en savoir plus avant") score += 15;
+      // Aisance informatique
+      if(a.ordi_aisance === "Sans problème") score += 15;
+      else if(a.ordi_aisance === "Un peu") score += 8;
+      // Fréquence d'usage
+      if(a.ordi_frequence === "Tous les jours") score += 10;
+      else if(a.ordi_frequence === "De temps en temps") score += 5;
+      // Qualité de la motivation écrite (nombre de mots)
+      var nbMots = (a.motivation || "").trim().split(/\s+/).filter(Boolean).length;
+      if(nbMots >= 15) score += 20;
+      else if(nbMots >= 5) score += 10;
+      // Déjà exposé·e à un outil de design
+      if(a.outils.some(function(o){ return o !== "Aucun"; })) score += 10;
+      // Situation (reconversion / sans emploi = disponibilité et motivation au changement)
+      if(a.situation === "En reconversion" || a.situation === "Sans emploi") score += 5;
+      else if(a.situation === "Étudiant·e" || a.situation === "En emploi") score += 3;
+      return score;
+    }
+    function statutFromScore(score){
+      if(score >= 65) return "🔥 Très intéressé";
+      if(score >= 35) return "🙂 Intéressé";
+      return "😐 Peu intéressé";
+    }
+
+    var reponses = {
+      situation: tag('situation'),
+      ordi_frequence: tag('ordi_frequence'),
+      ordi_aisance: tag('ordi_aisance'),
+      outils: tags('outils'),
+      motivation: val('motivation'),
+      engagement: tag('engagement')
+    };
+    var score = computeScore(reponses);
+    var statutProspect = statutFromScore(score);
+
+    var params = new URLSearchParams(location.search);
+    var data = {
+      contact:{ prenom:val('prenom'), nom:val('nom'), whatsapp:val('whatsapp'), email:val('email'), ville_pays:val('ville') },
+      situation: reponses.situation,
+      ordi_frequence: reponses.ordi_frequence,
+      ordi_aisance: reponses.ordi_aisance,
+      outils: reponses.outils,
+      motivation: reponses.motivation,
+      source: tag('source'),
+      engagement: reponses.engagement,
+      score: score,
+      statut_prospect: statutProspect,
+      cohorte: "Cohorte 9",
+      source_page: document.referrer || "",
+      cta_clique: params.get('src') || "",
+      date: new Date().toISOString()
+    };
+
+    // ====== ENVOI ======
+    submitBtn.classList.add('loading'); submitBtn.disabled=true;
+    submitBtn.querySelector('.txt').textContent = "Envoi en cours…";
+
+    function done(){
+      var s=document.getElementById('success'); s.classList.add('show');
+    }
+    function fail(){
+      submitBtn.classList.remove('loading'); submitBtn.disabled=false;
+      submitBtn.querySelector('.txt').textContent = "Réessayer";
+      alert("Un souci est survenu. Vérifie ta connexion et réessaie.");
+    }
+
+    if(WEBHOOK_URL){
+      fetch(WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+        .then(function(r){ if(!r.ok) throw new Error('http'); done(); })
+        .catch(function(){ fail(); });
+    } else {
+      console.log("Inscription (JSON prêt pour Notion) :", data);
+      setTimeout(done, 700); // démo sans webhook
+    }
+  });
+</script>
+</body>
+</html>
